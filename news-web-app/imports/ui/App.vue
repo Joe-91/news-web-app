@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Welcome to Meteor 111</h1>
+    <h1>Welcome to Meteor 222</h1>
     <hello/>
     <info/>
   </div>
