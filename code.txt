@@ -1,0 +1,31 @@
+meteor create --vue news-web-app
+
+run local:
+meteor --allow-superuser
+
+cd news-web-app local
+meteor --allow-superuser build ./build/	
+
+zip the files upload to server
+
+in the server
+# this is going to take some time
+cd ../news-web-app/programs/server
+npm install
+# this is going to take some time too
+
+then stop forever 
+sudo forever list
+sudo forever stop 2209
+
+run forever again:
+sudo PORT=80 MONGO_URL=mongodb://localhost:27017/news-web-app ROOT_URL=http://3.139.77.224 forever start /var/www/html/app/main.js
+
+
+https://nodejs.org/en/download/
+https://stackoverflow.com/questions/25677701/how-to-run-meteor-forever-and-is-it-good-using-3rd-party-database
+
+https://www.meteor.com/tutorials/blaze/creating-an-app
+https://guide.meteor.com/
+https://chocolatey.org/install#individual
+https://guide.meteor.com/
