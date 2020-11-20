@@ -26,12 +26,12 @@ export default {
           href: 'breadcrumbs_dashboard',
         },
         {
-          text: 'Link 1',
+          text: 'Link 10',
           disabled: false,
           href: 'breadcrumbs_link_1',
         },
         {
-          text: 'Link 2',
+          text: 'Link 20',
           disabled: true,
           href: 'breadcrumbs_link_2',
         },
