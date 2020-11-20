@@ -21,7 +21,7 @@ export default {
   data: () => ({
       items: [
         {
-          text: 'Dashboard',
+          text: '1111111',
           disabled: false,
           href: 'breadcrumbs_dashboard',
         },
