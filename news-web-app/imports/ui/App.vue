@@ -1,6 +1,7 @@
 <template>
    <v-app id="vuetify-app">
     <div>
+      <searchBar />
     <v-breadcrumbs
       :items="items"
       divider="-"
@@ -10,11 +11,14 @@
 </template>
 
 <script>
+import searchBar from './components/searchBar.vue'
 import Hello from './components/Hello.vue'
 import Info from './components/Info.vue'
 
 export default {
+  name: 'app',
   components: {
+    searchBar,
     Hello,
     Info,
   },
