@@ -1,6 +1,7 @@
 <template>
    <v-app id="vuetify-app">
     <div>
+      <!-- added component/element kind of inside this div tag so it displays.-->
       <searchBar />
     <v-breadcrumbs
       :items="items"
@@ -11,12 +12,14 @@
 </template>
 
 <script>
+// importing searchBar.vue file which i created under components
 import searchBar from './components/searchBar.vue'
 import Hello from './components/Hello.vue'
 import Info from './components/Info.vue'
 
 export default {
   name: 'app',
+  //added searchBar component here so it can be exported
   components: {
     searchBar,
     Hello,
