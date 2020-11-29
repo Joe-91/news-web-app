@@ -41,7 +41,7 @@
         </v-row>
 
         <v-row no-gutters class="white rounded-b">
-          <v-col v-for="article in news" :key="article.message" cols="4">
+          <v-col v-for="article in news" :key="article.message" cols="3">
             <NewsCard
               :name="article.name"
               :image="article.image"
@@ -82,8 +82,8 @@ export default {
       newsCategories: [
         { key: "trending", name: "Trending", icon: "mdi-history" },
         { key: "politic", name: "Politics", icon: "mdi-bank-outline" },
-        { key: "sport", name: "Sport", icon: "mdi-football" },
-        { key: "helth", name: "Helth", icon: "mdi-human-female-boy" },
+        { key: "sports", name: "Sports", icon: "mdi-football" },
+        { key: "health", name: "Health", icon: "mdi-human-female-boy" },
         { key: "economy", name: "Economy", icon: "mdi-chart-line" },
         { key: "environment", name: "Environment", icon: "mdi-palm-tree" },
         { key: "news", name: "General", icon: "mdi-earth" },
@@ -110,7 +110,7 @@ export default {
         .get("https://bing-news-search1.p.rapidapi.com/news/search", {
           params: {
             q: query,
-            count: "21",
+            count: "28",
             cc: "US",
             originalImg: "true",
             safeSearch: "Off",
