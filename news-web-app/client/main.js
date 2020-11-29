@@ -7,14 +7,14 @@ import Vuetify from 'vuetify';
 import 'vuetify/dist/vuetify.min.css';
 
 Meteor.startup(() => {
-  
-  Vue.use(Vuetify); 
 
-  const vuetify = new Vuetify();
+    Vue.use(Vuetify);
 
-  new Vue({
-    render: (h) => h(App),
-    vuetify
-  }).$mount('#app')
-  
+    const vuetify = new Vuetify();
+
+    new Vue({
+        render: (h) => h(App),
+        vuetify
+    }).$mount('#app')
+
 })
