@@ -8,6 +8,8 @@ meteor --allow-superuser build ./build/
 
 zip the files upload to server
 
+tar -xf archive.tar.gz
+
 in the server
 # this is going to take some time
 cd ../news-web-app/programs/server
@@ -19,8 +21,7 @@ sudo forever list
 sudo forever stop 2209
 
 run forever again:
-sudo PORT=80 MONGO_URL=mongodb://localhost:27017/news-web-app ROOT_URL=http://3.139.77.224 forever start /var/www/html/app/main.js
-
+sudo PORT=80 MONGO_URL=mongodb://localhost:27017/news-web-app ROOT_URL=http://3.139.77.224 forever start /var/www/html/bundle/main.js
 
 https://nodejs.org/en/download/
 https://stackoverflow.com/questions/25677701/how-to-run-meteor-forever-and-is-it-good-using-3rd-party-database
